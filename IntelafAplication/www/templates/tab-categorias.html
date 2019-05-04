@@ -1,0 +1,32 @@
+<ion-view view-title="Intelaf">
+  <ion-content class="padding">
+    <h2>Bienvenido a Intelaf</h2>
+    <h4>Empresa</h4>
+    <p>
+    Intelaf significa Inteligencia Artificial. La empresa se dedica a la venta de productos de tecnología y servicio tecnico a computadoras <a href="http://market.ionic.io/starters" target="_blank" rel="noopener">Ionic Market</a>.
+    </p>
+    <h4>Soporte</h4>
+    <p>
+      Contamos con centros de servicio para diagnostico y reparacion de computadoras. Tambien tenemos un blog con información técnica para la solución de algunos problemas.<code>www/templates/tab-dash.html</code>
+    </p>
+    <h4>Mayoreo</h4>
+    <p>
+    Politicas y condiciones para mayoristas. Si ya eres mayorista puedes entrar a la pagina para consultar los precios de mayoreo. on Twitter to get important updates and announcements for Ionic developers.
+    </p>
+    <h4>Ofertas</h4>
+    <p>
+      Busca las mejores ofertas y promociones que intelaf tiene para ti.
+    </p>
+
+    <!--primera linea de codigo de fuente-->
+    <div class="row linea1">
+      <!--categorias-->
+      <div class="col col-50 lis" ng-repeat="x in categorias" >
+        <button class="button button-energized button-outline button-block">{{x.cat}}  <i class="{{x.ico}}"></i></button>
+        <!--lista de categorias
+        mostrar las categorias-->
+      </div>            
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,3 +1,19 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyCBF-Ve0c9TfK1UvRIyq5H9iqol-zdU-2Y",
+  authDomain: "intelaf-980a0.firebaseapp.com",
+  databaseURL: "https://intelaf-980a0.firebaseio.com",
+  projectId: "intelaf-980a0",
+  storageBucket: "intelaf-980a0.appspot.com",
+  messagingSenderId: "179333723652",
+  appId: "1:179333723652:web:9f9781f70690dc00"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+
+
+
 angular.module('starter.controllers', [])
 
 .controller('categoriasCtrl', function($scope) {
@@ -37,12 +53,13 @@ angular.module('starter.controllers', [])
 
 
 
-
-
-
-
+  var starCountRef = firebase.database().ref('Mercaderia/');
+  starCountRef.on('value', function(snapshot) {
+    console.log(snapshot.val());
+  });
 
 })
+
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called

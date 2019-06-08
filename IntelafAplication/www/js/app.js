@@ -54,6 +54,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+    
+  .state('visaux', {
+      url: '/visaux',
+  //    views: {
+    //    'tab-visaux': {
+          templateUrl: 'templates/visaux.html',
+          controller: 'visauxCtrl'
+    //    }
+    //  }
+  })
 
 
 

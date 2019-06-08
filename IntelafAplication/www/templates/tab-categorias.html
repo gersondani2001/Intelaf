@@ -21,11 +21,36 @@
     <!--primera linea de codigo de fuente-->
     <div class="row linea1">
       <!--categorias-->
-      <div class="col col-50 lis" ng-repeat="x in categorias" >
-        <button class="button button-energized button-outline button-block">{{x.cat}}  <i class="{{x.ico}}"></i></button>
-        <!--lista de categorias
-        mostrar las categorias-->
-      </div>            
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Telefonia')">Telefonia<i class="fas fa-phone"></i></button>
+      </div>
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Gaming')">Gaming<i class="fas fa-phone"></i></button>
+      </div>
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Celulares')">Celulares<i class="fas fa-phone"></i></button>
+      </div>
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Baterias')">Baterias<i class="fas fa-phone"></i></button>
+      </div>
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Memorias')">Memorias<i class="fas fa-phone"></i></button>
+      </div>
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Televisores')">Televisores<i class="fas fa-phone"></i></button>
+      </div>
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Tablets')">Tablets<i class="fas fa-phone"></i></button>
+      </div>
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Camaras')">Camaras<i class="fas fa-phone"></i></button>
+      </div>
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Cables')">Cables<i class="fas fa-phone"></i></button>
+      </div>
+      <div class="col col-50 lis">
+        <button class="button button-energized button-outline button-block" ng-click="redireccionar('Audio')">Audio<i class="fas fa-phone"></i></button>
+      </div>      
     </div>
 
   </ion-content>

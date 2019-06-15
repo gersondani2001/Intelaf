@@ -1,5 +1,20 @@
 <ion-view view-title="Vista Auxiliar">
 	<ion-content>
-		<h1>Hola mundo.</h1>
+		<h1>Productos de Intelaf.</h1>
+
+		<div class="productos" ng-repeat="z in Productos | filter: categoria">
+			<p>{{z.nombre }}</p>
+			<p>{{z.marca }}</p>
+			<p>{{z.precio }}</p>
+			<p>{{z.categoria }}</p>
+			<p>{{z.pais }}</p>
+			<p>{{z.ciudad }}</p>
+			<p>{{z.codigo }}</p>
+			<br>
+
+		</div>
+
+		
+
 	</ion-content>
 </ion-view>

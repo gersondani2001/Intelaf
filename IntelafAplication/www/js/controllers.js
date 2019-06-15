@@ -69,9 +69,10 @@ angular.module('starter.controllers', [])
 
 
 	$scope.redireccionar = function(x) {
-		console.log(x)
+		
+		$rootScope.categoria = x; 
 
-		$state.go('visaux')
+		$state.go('visaux');
 
 	}
 
@@ -110,4 +111,12 @@ angular.module('starter.controllers', [])
 	$scope.Productos = $rootScope.merca;
 	console.log($scope.Productos);
 
+
+
+
+/*
+	for(var i = 1; i<10; i++){
+		$scope.Productos[i]
+	}
+*/
 })

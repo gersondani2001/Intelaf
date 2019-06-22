@@ -4,3 +4,66 @@
 .linea1{
 	flex-wrap:wrap;
 }
+
+.productos{
+	border:solid 3px #d65a31;
+	margin: 5% 8%;
+	padding: 5% 8%;
+	border-radius: 15px;
+	background: #393e46;
+}
+
+.ppp{
+	color: white;
+	margin: 0;
+}
+
+
+.h11{
+	color: #f7b71d;
+	text-align: center;
+	font-family: alvatica;
+	font-weight: bold;
+	padding: 3%;
+	font-size:3em;
+}
+
+.imga{
+	border: 3px solid #d65a31;
+	height: 150px;
+	color: white;
+	padding-top: 3%; 
+	text-align: right;
+}
+.rp{
+	padding-bottom: 10%;
+}
+
+.fondo{
+	background: #222831;
+}
+
+.cal{
+	font-size: 15px;
+	padding-bottom: 10%;
+}
+
+
+ion-tab{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+
+/*https://firebase.google.com/docs/storage/web/start
+
+subir la img en la base de datos
+
+y mostrarla en la aplicacion subirla en la pagina web y mostrarla 
+// Get the default bucket from a custom firebase.app.App
+var storage = customApp.storage();
+
+// Get a non-default bucket from a custom firebase.app.App
+var storage = customApp.storage("gs://my-custom-bucket");
+*/

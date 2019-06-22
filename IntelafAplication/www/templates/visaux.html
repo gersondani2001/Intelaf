@@ -1,20 +1,19 @@
-<ion-view view-title="Vista Auxiliar">
-	<ion-content>
-		<h1>Productos de Intelaf.</h1>
+<ion-view view-title="Vista Auxiliar" >
+	<ion-content class="fondo">
+		<h1  class="h11">Productos de Intelaf.</h1>
 
 		<div class="productos" ng-repeat="z in Productos | filter: categoria">
-			<p>{{z.nombre }}</p>
-			<p>{{z.marca }}</p>
-			<p>{{z.precio }}</p>
-			<p>{{z.categoria }}</p>
-			<p>{{z.pais }}</p>
-			<p>{{z.ciudad }}</p>
-			<p>{{z.codigo }}</p>
-			<br>
-
+			<div class="rp">
+				<p class="ppp">Codigo: Id.-{{z.codigo }}.</p>
+				<p class="ppp">Nombre del Producto: {{z.nombre }}.</p>
+				<p class="ppp">Precio: Q.{{z.precio }}.00.</p>				
+			</div>
+			<p class="ppp">Ilustracion del Producto:</p>
+			<div class="imga">
+				
+				<img src="Imagen" alt="intelafProducto">
+			</div>
 		</div>
-
-		
 
 	</ion-content>
 </ion-view>

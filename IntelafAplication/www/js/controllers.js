@@ -109,7 +109,15 @@ angular.module('starter.controllers', [])
 
 .controller('visauxCtrl',function($scope,$rootScope){
 	$scope.Productos = $rootScope.merca;
-	console.log($scope.Productos);
+	//console.log($scope.Productos);
+
+	$rootScope.carrito = {};
+	$scope.compra = function(z){
+		$rootScope.carrito[z.nombre]=z.precio;
+	};
+
+
+
 
 
 

@@ -67,3 +67,57 @@ var storage = customApp.storage();
 // Get a non-default bucket from a custom firebase.app.App
 var storage = customApp.storage("gs://my-custom-bucket");
 */
+
+
+
+.icocar{
+	color: red;
+	font-size: 35px;
+}
+.carritoline{
+	background: white;
+	border: orange 3px solid;
+	border-radius: 3px;
+	padding:3%;
+}
+.textocompra{
+	padding: 1%;
+	margin: 0 !important;
+}
+
+.com{
+	margin: 0 !important;
+	font-size: 20px; 
+}
+
+.contcarrito{
+	padding: 5%;
+}
+.buybutton{
+	padding-top: 4%;
+}
+
+.dropcontent{
+  display:none;
+  background-color:#efefef;
+  position:absolute;
+  min-width:200px !important;
+  min-height: 100px;
+  font-size: 20px; 
+}
+.dropcontent .btnlink{
+  display:block;
+  color:black;
+}
+.btnlink:hover {
+  background-color:red;
+}
+.dropdown:hover .dropcontent{
+  display:block;
+}
+
+.btn{
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}

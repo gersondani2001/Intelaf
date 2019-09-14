@@ -1,6 +1,28 @@
 <ion-view view-title="Vista Auxiliar" >
 	<ion-content class="fondo">
+
+
+
 		<h1  class="h11">Productos de Intelaf.</h1>
+
+		<div class="container contcarrito">
+			<div class="row carritoline">
+				<div class="col-25 text-center"><i class=" icocar fas fa-shopping-cart"></i></div>
+				<div class="col-75 textocompra">
+				    <div class="dropdown">
+				      <span class ="btn">Productos</span>
+				      <div class="dropcontent">
+				        <span class="btnlink" ng-repeat = "(nombre,precio) in carrito"> 
+
+				        <p>{{nombre}}</p> 
+				        <p>Q.{{precio}}</p>
+				    	</span>
+				    	</div>
+				    </div>		
+				</div>	
+			</div>		
+		</div>
+
 
 		<div class="productos" ng-repeat="z in Productos | filter: categoria">
 			<div class="rp">
@@ -12,6 +34,10 @@
 			<div class="imga">
 				
 				<img src="Imagen" alt="intelafProducto">
+			</div>
+
+			<div class="buttoncompra">
+				<button class=" button button-danger button-block" ng-click="compra(z)"><i class="buybutton icocar fas fa-shopping-cart"></i></button>
 			</div>
 		</div>
 

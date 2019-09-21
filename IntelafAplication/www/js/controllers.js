@@ -78,7 +78,7 @@ angular.module('starter.controllers', [])
 
 
 	
-
+  
 })
 
 
@@ -112,8 +112,11 @@ angular.module('starter.controllers', [])
 	//console.log($scope.Productos);
 
 	$rootScope.carrito = {};
+	$rootScope.carrito["total"] = 0;
 	$scope.compra = function(z){
 		$rootScope.carrito[z.nombre]=z.precio;
+		$rootScope.carrito["total"]= parseInt($rootScope.carrito.total)+parseInt(z.precio);
+		console.log($rootScope.carrito)
 	};
 
 

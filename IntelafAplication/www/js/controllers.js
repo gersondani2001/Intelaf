@@ -117,10 +117,14 @@ angular.module('starter.controllers', [])
 		$rootScope.carrito[z.nombre]=z.precio;
 		$rootScope.carrito["total"]= parseInt($rootScope.carrito.total)+parseInt(z.precio);
 		console.log($rootScope.carrito)
+
+		
 	};
 
 
-
+	$scope.deleteItem = function(x) {
+		delete $rootScope.carrito[x];
+	}
 
 
 

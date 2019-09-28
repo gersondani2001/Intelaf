@@ -71,17 +71,20 @@ var storage = customApp.storage("gs://my-custom-bucket");
 
 
 .icocar{
-	color: red;
-	font-size: 35px;
+	color: orange;
+	font-size: 25px;
+	padding-left:10px;
+
 }
 .carritoline{
 	background: white;
 	border: orange 3px solid;
 	border-radius: 3px;
-	padding:3%;
+	padding-bottom: 3%;
+	padding-top:3%;
 }
 .textocompra{
-	padding: 1%;
+	padding-left: 3%;
 	margin: 0 !important;
 }
 
@@ -121,3 +124,12 @@ var storage = customApp.storage("gs://my-custom-bucket");
 	font-weight: bold;
 	color: black;
 }
+
+.careticon{
+	color: orange;
+	font-size: 35px;
+	padding-left: 5%;	
+	padding-top: 2%;
+	width: 10px;
+}
+

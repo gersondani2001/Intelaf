@@ -1,5 +1,8 @@
 <ion-view view-title="Vista Auxiliar" >
-	<ion-content class="fondo">
+	<ion-content class="fondo"> 
+
+		<i ui-sref="tab.categorias" href="tab-categorias.html" class=" careticon fas fa-caret-square-left"></i>
+		
 
 
 
@@ -7,7 +10,9 @@
 
 		<div class="container contcarrito">
 			<div class="row carritoline">
-				<div class="col-25 text-center"><i class=" icocar fas fa-shopping-cart"></i></div>
+				<div class="col-25 ">
+					<i class=" icocar fas fa-shopping-cart"></i>
+				</div>
 				<div class="col-75 textocompra">
 				    <div class="dropdown">
 				      <span class ="btn">Productos</span>
@@ -16,11 +21,14 @@
 
 				        <p>{{nombre}}</p> 
 				        <p>Q.{{precio}}</p>
+				    	<i class="button deleteicon fas fa-trash-alt" ng-click="deleteItem(nombre)"></i>				        
 				    	</span>
 
 				    	</div>
 
 				    	<span>{{carrito.total}}</span>
+
+
 
 
 				    </div>		
